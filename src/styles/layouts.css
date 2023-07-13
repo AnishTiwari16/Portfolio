@@ -1,0 +1,38 @@
+.custom-shadow {
+  text-shadow: 0 4px 30px hsla(0, 0%, 100%, 0.5);
+}
+.connect-btn {
+  filter: drop-shadow(0 2.82464px 21.1848px rgba(255, 255, 255, 0.5));
+  position: relative;
+  z-index: 1;
+  border-radius: 2.82464px;
+  padding: 8px 40px 17px 35px;
+}
+.connect-btn:before {
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: calc(100% - 5px);
+  height: calc(100% - 9px);
+  border-radius: 2.82464px;
+  transition: all 0.3s;
+}
+.connect-btn:after {
+  content: '';
+  position: absolute;
+  width: calc(100% - 5px);
+  height: calc(100% - 9px);
+  border-radius: 2.82464px;
+  transition: all 0.3s;
+  left: 5px;
+  top: 7px;
+  background-color: #070707;
+  border: 0.706161px solid #fff;
+  z-index: -2;
+}
+.btn-font {
+  font-family: Array, sans-serif;
+}

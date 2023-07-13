@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import HeaderSection from '@/components/layout/HeaderSection';
+import HeroSection from '@/components/layout/HeroSection';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
@@ -22,7 +24,12 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className='bg-white'>demo</section>
+        <section className='h-screen bg-black'>
+          <div className=' container mx-auto px-10 text-white md:px-20'>
+            <HeaderSection />
+            <HeroSection />
+          </div>
+        </section>
       </main>
     </Layout>
   );
