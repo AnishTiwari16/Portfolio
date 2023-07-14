@@ -24,11 +24,9 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className='h-screen bg-black'>
-          <div className=' container mx-auto px-10 text-white md:px-20'>
-            <HeaderSection />
-            <HeroSection />
-          </div>
+        <section className='container mx-auto px-10 md:px-20'>
+          <HeaderSection />
+          <HeroSection />
         </section>
       </main>
     </Layout>

@@ -12,7 +12,7 @@ export default function Document() {
           crossOrigin='anonymous'
         />
       </Head>
-      <body>
+      <body className='cursor-fancy bg-black text-white'>
         <Main />
         <NextScript />
       </body>

@@ -35,4 +35,26 @@
 }
 .btn-font {
   font-family: Array, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.nav-hover:hover {
+  text-shadow: 0 -4px 0 #09f755;
+  font-family: Array, sans-serif;
+}
+.text-codeYellow {
+  --tw-text-opacity: 1;
+  color: rgb(255 159 10 / var(--tw-text-opacity));
+}
+.text-codeBlue {
+  --tw-text-opacity: 1;
+  color: rgb(100 210 255 / var(--tw-text-opacity));
+}
+.text-codeGreen {
+  --tw-text-opacity: 1;
+  color: rgb(9 247 85 / var(--tw-text-opacity));
+}
+.text-codeComment {
+  --tw-text-opacity: 1;
+  color: rgb(142 142 147 / var(--tw-text-opacity));
 }
