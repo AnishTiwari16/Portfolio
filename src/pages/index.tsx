@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import AboutSection from '@/components/layout/AboutSection';
 import HeaderSection from '@/components/layout/HeaderSection';
 import HeroSection from '@/components/layout/HeroSection';
 import Layout from '@/components/layout/Layout';
@@ -24,9 +25,12 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className='container mx-auto px-10 md:px-20'>
+        <section>
           <HeaderSection />
+        </section>
+        <section className='container mx-auto px-10 md:px-20'>
           <HeroSection />
+          <AboutSection />
         </section>
       </main>
     </Layout>
