@@ -5,6 +5,9 @@ export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      cursor: {
+        fancy: "url('../../public/images/cursor.svg') 12 10, auto",
+      },
       fontFamily: {
         primary: ['Inter', ...defaultTheme.fontFamily.sans],
       },
