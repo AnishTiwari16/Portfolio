@@ -25,8 +25,10 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <section className='container mx-auto px-10 md:px-20'>
+        <section>
           <HeaderSection />
+        </section>
+        <section className='container mx-auto px-10 md:px-20'>
           <HeroSection />
           <AboutSection />
         </section>

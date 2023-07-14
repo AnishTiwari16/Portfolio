@@ -7,6 +7,7 @@ import ScrollAnimation from '@/components/ScrollAnimations';
 
 import bounceVariant from '@/animations/bounceVariant';
 import socialIconMotion from '@/animations/socialIconMotion';
+import { SOCIAL_DATA } from '@/config/socials';
 
 import myImage from '../../../public/images/about-image.png';
 import FirebaseLogo from '../../../public/images/firebase-logo.svg';
@@ -20,9 +21,9 @@ import Twitter from '../../../public/images/twitter.svg';
 import ValoLogo from '../../../public/images/valo-logo.svg';
 const AboutSection = () => {
   return (
-    <div className='grid grid-cols-1 gap-x-44 pt-52 lg:grid-cols-2'>
-      <div className=''>
-        <div className='custom-shadow text-8xl font-bold leading-normal'>
+    <div className='grid grid-cols-1 gap-x-44 pt-16 md:pt-52 lg:grid-cols-2'>
+      <div>
+        <div className='custom-shadow text-5xl font-bold leading-snug md:text-8xl md:leading-normal'>
           About
         </div>
         <p className=''>
@@ -35,69 +36,30 @@ const AboutSection = () => {
             initial='rest'
             whileHover='hover'
             animate='rest'
-            className='pr-3 pt-3'
+            className='flex'
           >
-            <Link
-              legacyBehavior
-              href='https://www.linkedin.com/in/anish-tiwari-a5923b207/'
-            >
-              <a target='_blank' rel='noopener noreferrer'>
-                <motion.div variants={socialIconMotion}>
-                  <Linkedin className='h-[22.24px] w-[22.24px] sm:h-[26.85px] sm:w-[26.85px] xl:h-[31px] xl:w-[31px]' />
-                </motion.div>
-              </a>
-            </Link>
-          </motion.div>
-          <motion.div
-            initial='rest'
-            whileHover='hover'
-            animate='rest'
-            className='pr-3 pt-3'
-          >
-            <Link
-              href='https://www.linkedin.com/in/anish-tiwari-a5923b207/'
-              legacyBehavior
-            >
-              <a target='_blank' rel='noopener noreferrer'>
-                <motion.div variants={socialIconMotion}>
-                  <Twitter className='h-[22.24px] w-[22.24px] sm:h-[26.85px] sm:w-[26.85px] xl:h-[31px] xl:w-[31px]' />
-                </motion.div>
-              </a>
-            </Link>
-          </motion.div>
-          <motion.div
-            initial='rest'
-            whileHover='hover'
-            animate='rest'
-            className='pr-3 pt-3'
-          >
-            <Link
-              href='https://www.linkedin.com/in/anish-tiwari-a5923b207/'
-              legacyBehavior
-            >
-              <a target='_blank' rel='noopener noreferrer'>
-                <motion.div variants={socialIconMotion}>
-                  <Mail className='h-[22.24px] w-[22.24px] sm:h-[26.85px] sm:w-[26.85px] xl:h-[31px] xl:w-[31px]' />
-                </motion.div>
-              </a>
-            </Link>
-          </motion.div>
-          <motion.div
-            initial='rest'
-            whileHover='hover'
-            animate='rest'
-            className='pr-3 pt-3'
-          >
-            <Link
-              href='https://www.linkedin.com/in/anish-tiwari-a5923b207/'
-              legacyBehavior
-            >
-              <a target='_blank' rel='noopener noreferrer'>
-                <motion.div variants={socialIconMotion}>
-                  <Github className='h-[22.24px] w-[22.24px] sm:h-[26.85px] sm:w-[26.85px] xl:h-[31px] xl:w-[31px]' />
-                </motion.div>
-              </a>
-            </Link>
+            {SOCIAL_DATA.map((elem, index) => {
+              return (
+                <Link legacyBehavior href={elem.link} key={index}>
+                  <a target='_blank' rel='noopener noreferrer'>
+                    <motion.div
+                      variants={socialIconMotion}
+                      className='mr-8  pt-5'
+                    >
+                      {elem.name === 'linkedin' ? (
+                        <Linkedin className='h-[22.24px] w-[22.24px] sm:h-[26.85px] sm:w-[26.85px] xl:h-[31px] xl:w-[31px]' />
+                      ) : elem.name === 'github' ? (
+                        <Github className='h-[22.24px] w-[22.24px] sm:h-[26.85px] sm:w-[26.85px] xl:h-[31px] xl:w-[31px]' />
+                      ) : elem.name === 'twitter' ? (
+                        <Twitter className='h-[22.24px] w-[22.24px] sm:h-[26.85px] sm:w-[26.85px] xl:h-[31px] xl:w-[31px]' />
+                      ) : (
+                        <Mail className='h-[22.24px] w-[22.24px] sm:h-[26.85px] sm:w-[26.85px] xl:h-[31px] xl:w-[31px]' />
+                      )}
+                    </motion.div>
+                  </a>
+                </Link>
+              );
+            })}
           </motion.div>
         </div>
       </div>
@@ -105,7 +67,7 @@ const AboutSection = () => {
       <ScrollAnimation>
         <motion.div
           variants={bounceVariant}
-          className=' about-image-container relative flex h-[219px] w-[219px] before:h-[142px] before:w-[142px] sm:h-[396px] sm:w-[396px] sm:before:h-[258px] sm:before:w-[258px]'
+          className=' about-image-container relative flex h-[260px] w-auto before:h-[142px] before:w-[142px] sm:h-[396px] sm:w-[396px] sm:before:h-[258px] sm:before:w-[258px]'
         >
           <div className='absolute inset-0  z-[1] m-auto h-[152px] w-[152px] rounded-full border-[3px] border-[rgba(255,255,255,0.15)] sm:h-[274px] sm:w-[274px]'></div>
           <div className='absolute inset-0  z-[1] m-auto h-[190px] w-[190px] rounded-full border-[1px] border-[rgba(255,255,255,0.15)] sm:h-[345px] sm:w-[345px]'></div>

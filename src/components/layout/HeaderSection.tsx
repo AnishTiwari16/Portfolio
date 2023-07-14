@@ -27,10 +27,10 @@ const HeaderSection = () => {
             // delay: 0.5,
             ease: [0, 0.71, 0.2, 1.01],
           }}
-          className='col-span-4 col-start-1 mt-6 w-auto px-3 py-4 sm:mt-[32px] sm:py-[30px] sm:pl-6 sm:pr-[30px] md:col-span-12 md:mt-[28px] lg:col-span-8 lg:col-start-1 lg:mt-[30px] xl:mt-[44px] xl:pr-6 '
+          className='bg-nav-bg col-span-4 col-start-1 mt-6 w-auto rounded-lg px-3 py-4 sm:mt-[32px] sm:rounded-xl sm:py-[30px] sm:pl-6 sm:pr-[30px] md:col-span-12 md:mt-[28px] lg:col-span-8 lg:col-start-3 lg:mt-[30px] xl:mt-[16px] xl:pr-6'
           id='main-nav'
         >
-          <div className='bg-nav-bg flex flex-row flex-wrap items-center justify-between rounded-2xl bg-[#25252580] p-6 backdrop-blur-[80px]'>
+          <div className='bg-nav-bg flex flex-row flex-wrap items-center justify-between rounded-2xl bg-[#25252580] p-7 backdrop-blur-[80px]'>
             <button>
               <a>{`<Anish />`}</a>
             </button>

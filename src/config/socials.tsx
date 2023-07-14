@@ -5,6 +5,14 @@ export const SOCIAL_DATA = [
   },
   {
     name: 'github',
-    link: 'https://www.linkedin.com/in/sarthak-ahuja07/',
+    link: 'https://github.com/AnishTiwari16',
+  },
+  {
+    name: 'twitter',
+    link: 'https://twitter.com/AnishTiw',
+  },
+  {
+    name: 'email',
+    link: 'mailto:anish.at.tiwari@gmail.com',
   },
 ];
