@@ -95,11 +95,13 @@ const HeroSection = () => {
                 <div className='cursor w-full'>
                   <textarea
                     id='code'
-                    className='w-full resize-none overflow-y-hidden border-transparent bg-transparent text-sm'
+                    className='w-full resize-none overflow-y-hidden border-0 bg-transparent text-sm focus:ring-0'
                     spellCheck='false'
                     rows={1}
                     cols={100}
-                    // onChange={handleCodeChange}
+                    // onChange={
+                    //   handleCodeChange
+                    // }
                   />
                   <i className='hide'></i>
                 </div>
