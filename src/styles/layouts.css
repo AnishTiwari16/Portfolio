@@ -91,3 +91,15 @@
     #fb775a 78.75%
   );
 }
+.bg-experience-hr-line {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 13.02%,
+    #fff 88.54%,
+    transparent
+  );
+}
+.border-radius-white-line {
+  border: 1px solid white;
+}
