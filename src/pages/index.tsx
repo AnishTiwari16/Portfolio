@@ -5,6 +5,7 @@ import ExperienceSection from '@/components/layout/ExperienceSection';
 import HeaderSection from '@/components/layout/HeaderSection';
 import HeroSection from '@/components/layout/HeroSection';
 import Layout from '@/components/layout/Layout';
+import LetsTalk from '@/components/layout/LetsTalk';
 import ProjectSection from '@/components/layout/ProjectSection';
 import SkillsSection from '@/components/layout/SkillsSection';
 import Seo from '@/components/Seo';
@@ -36,6 +37,7 @@ export default function HomePage() {
           <ExperienceSection />
           <ProjectSection />
           <SkillsSection />
+          <LetsTalk />
         </section>
       </main>
     </Layout>

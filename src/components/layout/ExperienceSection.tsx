@@ -12,7 +12,7 @@ const ExperienceSection = () => {
         <div className='border-radius-white-line absolute right-0 top-[-4px] h-[8px] w-[8px] rounded'></div>
       </div>
       <div className='flex w-full flex-col justify-between gap-36 md:flex-row'>
-        <div className='w-[424px]'>
+        <div className='w-full md:w-[424px]'>
           <h3>Unibase Research</h3>
           <div className='flex'>
             <p className='mr-4'>Full-Stack Developer</p>
@@ -31,7 +31,7 @@ const ExperienceSection = () => {
             </li>
           </ul>
         </div>
-        <div className='w-[424px]'>
+        <div className='w-full md:w-[424px]'>
           <h3>Unibase Research</h3>
           <div className='flex'>
             <p className='mr-4'>Full-Stack Developer Intern</p>
