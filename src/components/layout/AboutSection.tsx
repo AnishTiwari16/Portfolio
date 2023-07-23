@@ -21,7 +21,10 @@ import Twitter from '../../../public/images/twitter.svg';
 import ValoLogo from '../../../public/images/valo-logo.svg';
 const AboutSection = () => {
   return (
-    <div className='grid grid-cols-1 gap-x-44 pt-16 md:pt-52 lg:grid-cols-2'>
+    <div
+      className='grid grid-cols-1 gap-x-44 pt-16 md:pt-52 lg:grid-cols-2'
+      id='about'
+    >
       <div>
         <div className='custom-shadow text-5xl font-bold leading-snug md:text-8xl md:leading-normal'>
           About

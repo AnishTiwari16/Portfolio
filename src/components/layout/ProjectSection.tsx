@@ -40,7 +40,7 @@ const ProjectSection = () => {
   };
   return (
     <>
-      <div className='grid grid-cols-4 md:grid-cols-12'>
+      <div className='grid grid-cols-4 md:grid-cols-12' id='work'>
         <div className='col-span-4 md:col-span-5'>
           <div className='custom-shadow text-5xl font-bold leading-snug md:text-8xl md:leading-normal'>
             Work

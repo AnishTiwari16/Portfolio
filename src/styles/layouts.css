@@ -103,7 +103,14 @@
 .border-radius-white-line {
   border: 1px solid white;
 }
-.hover-on-tabs:hover {
+.on-tabs:hover {
   cursor: pointer;
   text-shadow: 0 4px 30px hsla(0, 0%, 100%, 0.7);
+}
+.tab-color {
+  text-shadow: 0 -4px 0 #09f755;
+}
+.active .nav-hover {
+  color: #09f755;
+  font-family: Array, sans-serif;
 }
