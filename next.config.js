@@ -14,6 +14,14 @@ const nextConfig = {
   //   ],
   // },
 
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.imgur.com',
+      },
+    ],
+  },
   // SVGR
   webpack(config) {
     config.module.rules.push({

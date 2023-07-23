@@ -7,7 +7,10 @@ const HeroSection = () => {
   const [startTyping, setStartTyping] = useState(false);
 
   return (
-    <div className='grid grid-cols-1 gap-x-44 pt-44 md:pt-56 lg:grid-cols-2'>
+    <div
+      className='grid grid-cols-1 gap-x-44 pt-44 md:pt-56 lg:grid-cols-2'
+      id='desc'
+    >
       <div className=''>
         <div className='text-3xl md:text-6xl'>
           Hi, I am <br />

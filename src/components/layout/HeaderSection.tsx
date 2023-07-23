@@ -1,5 +1,6 @@
 import { motion, SVGMotionProps } from 'framer-motion';
 import React, { useRef, useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 const Path = (
   props: React.JSX.IntrinsicAttributes &
     SVGMotionProps<SVGPathElement> &
@@ -32,7 +33,16 @@ const HeaderSection = () => {
         >
           <div className='bg-nav-bg flex flex-row flex-wrap items-center justify-between rounded-2xl bg-[#25252580] p-7 backdrop-blur-[80px]'>
             <button>
-              <a>{`<Anish />`}</a>
+              <ScrollLink
+                to='desc'
+                spy={true}
+                onClick={() => setisNavOpen(false)}
+                activeClass='active'
+                smooth={true}
+                duration={500}
+              >
+                <div>{`<Anish />`}</div>
+              </ScrollLink>
             </button>
             <motion.button
               id='toggler'
@@ -98,19 +108,46 @@ const HeaderSection = () => {
               } `}
             >
               <motion.button>
-                <div className='px-[40px] py-3  sm:py-[20px] xl:px-0 xl:py-0'>
-                  <a className='nav-hover duration-300'>.about()</a>
-                </div>
+                <ScrollLink
+                  to='about'
+                  spy={true}
+                  onClick={() => setisNavOpen(false)}
+                  activeClass='active'
+                  smooth={true}
+                  duration={500}
+                >
+                  <div className='px-[40px] py-3  sm:py-[20px] xl:px-0 xl:py-0'>
+                    <div className='nav-hover duration-300'>.about()</div>
+                  </div>
+                </ScrollLink>
               </motion.button>
               <motion.button>
-                <div className='px-[40px] py-3 sm:py-[20px] xl:px-0 xl:py-0'>
-                  <a className='nav-hover duration-300'>.work()</a>
-                </div>
+                <ScrollLink
+                  to='work'
+                  spy={true}
+                  onClick={() => setisNavOpen(false)}
+                  activeClass='active'
+                  smooth={true}
+                  duration={500}
+                >
+                  <div className='px-[40px] py-3 sm:py-[20px] xl:px-0 xl:py-0'>
+                    <div className='nav-hover duration-300'>.work()</div>
+                  </div>
+                </ScrollLink>
               </motion.button>
               <motion.button>
-                <div className='px-[40px]  py-3 sm:py-[20px] xl:px-0 xl:py-0'>
-                  <a className='nav-hover duration-300'>.skills()</a>
-                </div>
+                <ScrollLink
+                  to='skills'
+                  spy={true}
+                  onClick={() => setisNavOpen(false)}
+                  activeClass='active'
+                  smooth={true}
+                  duration={500}
+                >
+                  <div className='px-[40px]  py-3 sm:py-[20px] xl:px-0 xl:py-0'>
+                    <div className='nav-hover duration-300'>.skills()</div>
+                  </div>
+                </ScrollLink>
               </motion.button>
 
               <motion.button>
