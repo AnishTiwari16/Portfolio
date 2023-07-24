@@ -20,14 +20,14 @@ const ExperienceSection = () => {
           </div>
           <ul className='list-disc pl-4 pt-3'>
             <li>
-              Worked on multiple projects from front to back creating
-              applications. Some of them are Scatter, Instaraise, and company's
-              DEX automated portal.
+              Worked closely with CEO/CTO/designers to understand business/user
+              requirements, being actively involved in brainstorming sessions
+              and converted them into actual product with excellent quality in a
+              very short time.
             </li>
             <li className='pt-2'>
               Worked as a full stack developer with a focus on front end
-              technologies (React + TypeScript), with server side development
-              (Node, Express, MongoDB), and blockchain (Defi, Polygon).
+              technologies (React + TypeScript) and blockchain (Defi, Polygon).
             </li>
           </ul>
         </div>
@@ -39,14 +39,16 @@ const ExperienceSection = () => {
           </div>
           <ul className='list-disc pl-4 pt-3'>
             <li>
-              Worked on multiple projects from front to back creating
-              applications. Some of them are Scatter, Instaraise, and company's
-              DEX automated portal.
+              Automated the manual work involved in hosting Ido’s. Integrated
+              smart contracts for secure transactions and Developed new
+              user-friendly UI.
+            </li>
+            <li>
+              Developed new UI from scratch in collaboration with designers
             </li>
             <li className='pt-2'>
-              Worked as a full stack developer with a focus on front end
-              technologies (React + TypeScript), with server side development
-              (Node, Express, MongoDB), and blockchain (Defi, Polygon).
+              Independently handled multiple impactful projects, consistently
+              meeting deadlines and achieving successful outcomes.
             </li>
           </ul>
         </div>

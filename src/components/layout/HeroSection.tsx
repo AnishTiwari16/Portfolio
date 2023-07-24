@@ -11,7 +11,7 @@ const HeroSection = () => {
       className='grid grid-cols-1 gap-x-44 pt-44 md:pt-56 lg:grid-cols-2'
       id='desc'
     >
-      <div className=''>
+      <div>
         <div className='text-3xl md:text-6xl'>
           Hi, I am <br />
           <span className='custom-shadow font-bold leading-normal'>
@@ -55,7 +55,7 @@ const HeroSection = () => {
                 typewriter
                   .pauseFor(10)
                   .typeString(
-                    `<span><span class="text-[#636262] mr-1"> 1 </span>class<span class="text-codeYellow"> Person {</span></span></br><span><span class="text-[#636262] mr-1"> 2 </span>&emsp;&emsp; constructor<span class="text-codePurple">() {</span></span></br><span><span class="text-[#636262] mr-1"> 3 </span>&emsp;&emsp;&emsp;&emsp;<span class="text-codeBlue">this</span>.name = <span class="text-codeGreen">"Anish Tiwari"</span></span></br><span><span class="text-[#636262] mr-1"> 4 </span>&emsp;&emsp;&emsp;&emsp;<span class="text-codeBlue">this</span>.interest = <span class="text-codeGreen">"WEB 3"</span></span></br><span><span class="text-[#636262] mr-1"> 5 </span>&emsp;&emsp;&emsp;&emsp;<span class="text-codeBlue">this</span>.age = <span class="text-codeGreen">22</span></span></br><span class="inline-flex"><span class="flex-grow-0 flex-shrink-0 text-[#636262] mr-1 sm:w-[16.81px] w-[12px]"> 6 </span>&emsp;&emsp;&emsp;&emsp;<span class="flex-grow-0"><span class="text-codeBlue">this</span>.tech = ["<span><span class="text-codeGreen">React</span><span>", "</span><span class="text-codeGreen">Redux</span><span>", <span class="text-codeGreen">Typescript</span>, "</span><span class="text-codeGreen">Node</span><span>", "</span><span class="text-codeGreen">MongoDB</span><span>"]</span></span></span></span></br><span><span class="text-[#636262] mr-1"> 7 </span>&emsp;&emsp;<span class="text-codePurple"> }</span></span></br><span><span class="text-[#636262] mr-1"> 8 </span>&emsp;&emsp; <span>...</span></span></br><span><span class="text-[#636262] mr-1"> 9 </span><span class="text-codeYellow">}</span></span></br><span><span class="text-[#636262] mr-1"> 10</span>const anish = <span class="text-codeBlue">new </span><span class="text-codeYellow"> Person() </span></span>`
+                    `<span><span class="text-[#636262] mr-1"> 1 </span>class<span class="text-codeYellow"> Person {</span></span></br><span><span class="text-[#636262] mr-1"> 2 </span>&emsp;&emsp; constructor<span class="text-codePurple">() {</span></span></br><span><span class="text-[#636262] mr-1"> 3 </span>&emsp;&emsp;&emsp;&emsp;<span class="text-codeBlue">this</span>.name = <span class="text-codeGreen">"Anish Tiwari"</span></span></br><span><span class="text-[#636262] mr-1"> 4 </span>&emsp;&emsp;&emsp;&emsp;<span class="text-codeBlue">this</span>.interest = <span class="text-codeGreen">"WEB 3"</span></span></br><span><span class="text-[#636262] mr-1"> 5 </span>&emsp;&emsp;&emsp;&emsp;<span class="text-codeBlue">this</span>.age = <span class="text-codeGreen">22</span></span></br><span class="inline-flex"><span class="flex-grow-0 flex-shrink-0 text-[#636262] mr-1 sm:w-[16.81px] w-[12px]"> 6 </span>&emsp;&emsp;&emsp;&emsp;<span class="flex-grow-0"><span class="text-codeBlue">this</span>.tech = [<span><span class="text-codeGreen">React.JS</span><span>, </span><span class="text-codeGreen">Next.JS</span><span>, <span class="text-codeGreen">React Native</span>, </span><span class="text-codeGreen">Redux</span><span>, </span><span class="text-codeGreen">Typescript</span><span>]</span></span></span></span></br><span><span class="text-[#636262] mr-1"> 7 </span>&emsp;&emsp;<span class="text-codePurple"> }</span></span></br><span><span class="text-[#636262] mr-1"> 8 </span>&emsp;&emsp; <span>...</span></span></br><span><span class="text-[#636262] mr-1"> 9 </span><span class="text-codeYellow">}</span></span></br><span><span class="text-[#636262] mr-1"> 10</span>const anish = <span class="text-codeBlue">new </span><span class="text-codeYellow"> Person() </span></span>`
                   )
                   .start()
                   .callFunction(() => {
@@ -68,7 +68,6 @@ const HeroSection = () => {
               <div className='flex gap-1'>
                 <span>
                   <span className='mr-1 text-[#636262]'>11</span>
-                  <span className='text-codeComment'>{`// try `}</span>
                 </span>
                 <Typewriter
                   options={{
@@ -76,11 +75,11 @@ const HeroSection = () => {
                     cursor: '',
                     deleteSpeed: 20,
                     strings: [
-                      '<span class="text-codeComment"> "anish.playFavSong()" </span>',
-                      '<span class="text-codeComment"> "anish.pauseFavSong()" </span>',
-                      '<span class="text-codeComment"> "anish.getResume()" </span>',
-                      '<span class="text-codeComment"> "anish.getBitcoin()" </span>',
-                      '<span class="text-codeComment"> "anish.changeBG()" </span>',
+                      '<span class="text-codeComment"> Front-end Developer </span>',
+                      '<span class="text-codeComment"> Qualified advanced javascript certification </span>',
+                      '<span class="text-codeComment"> 500+ problems on LC and GFG </span>',
+                      '<span class="text-codeComment"> Ranked 3rd rank in BPIT Coding Competition </span>',
+                      '<span class="text-codeComment"> Qualified for SnackDown </span>',
                     ],
                     autoStart: true,
                     loop: true,
@@ -89,25 +88,6 @@ const HeroSection = () => {
                     pauseFor: 3000,
                   }}
                 />
-              </div>
-            )}
-
-            {startTyping && (
-              <div className='inline-flex'>
-                <span className='mr-1 text-[#636262]'>12</span>
-                <div className='cursor w-full'>
-                  <textarea
-                    id='code'
-                    className='w-full resize-none overflow-y-hidden border-0 bg-transparent text-sm focus:ring-0'
-                    spellCheck='false'
-                    rows={1}
-                    cols={100}
-                    // onChange={
-                    //   handleCodeChange
-                    // }
-                  />
-                  <i className='hide'></i>
-                </div>
               </div>
             )}
           </div>

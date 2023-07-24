@@ -1,6 +1,8 @@
 import { motion, SVGMotionProps } from 'framer-motion';
 import React, { useRef, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+
+import { HEADER } from '@/config/header';
 const Path = (
   props: React.JSX.IntrinsicAttributes &
     SVGMotionProps<SVGPathElement> &
@@ -14,6 +16,11 @@ const Path = (
     {...props}
   />
 );
+interface NavItem {
+  navName: string;
+  navigateTo: string;
+}
+
 const HeaderSection = () => {
   const [isNavOpen, setisNavOpen] = useState(false);
   const btnRef = useRef<HTMLButtonElement>(null);
@@ -41,7 +48,7 @@ const HeaderSection = () => {
                 smooth={true}
                 duration={500}
               >
-                <div>{`<Anish />`}</div>
+                <div className='text-base font-extrabold md:text-xl md:font-black'>{`<Anish />`}</div>
               </ScrollLink>
             </button>
             <motion.button
@@ -107,66 +114,26 @@ const HeaderSection = () => {
                   : 'mt-0 max-h-0 xl:max-h-[100px]'
               } `}
             >
-              <motion.button>
-                <ScrollLink
-                  to='about'
-                  spy={true}
-                  onClick={() => setisNavOpen(false)}
-                  activeClass='active'
-                  smooth={true}
-                  duration={500}
-                >
-                  <div className='px-[40px] py-3  sm:py-[20px] xl:px-0 xl:py-0'>
-                    <div className='nav-hover duration-300'>.about()</div>
-                  </div>
-                </ScrollLink>
-              </motion.button>
-              <motion.button>
-                <ScrollLink
-                  to='work'
-                  spy={true}
-                  onClick={() => setisNavOpen(false)}
-                  activeClass='active'
-                  smooth={true}
-                  duration={500}
-                >
-                  <div className='px-[40px] py-3 sm:py-[20px] xl:px-0 xl:py-0'>
-                    <div className='nav-hover duration-300'>.work()</div>
-                  </div>
-                </ScrollLink>
-              </motion.button>
-              <motion.button>
-                <ScrollLink
-                  to='skills'
-                  spy={true}
-                  onClick={() => setisNavOpen(false)}
-                  activeClass='active'
-                  smooth={true}
-                  duration={500}
-                >
-                  <div className='px-[40px]  py-3 sm:py-[20px] xl:px-0 xl:py-0'>
-                    <div className='nav-hover duration-300'>.skills()</div>
-                  </div>
-                </ScrollLink>
-              </motion.button>
-
-              <motion.button>
-                <div className='px-[40px] py-3 sm:py-[20px] xl:px-0 xl:py-0'>
-                  <a className='nav-hover duration-300'>.contact()</a>
-                </div>
-              </motion.button>
-              <motion.button>
-                <div className='px-[40px] py-3 sm:py-[20px] xl:px-0 xl:py-0'>
-                  <a
-                    href='/resume.pdf'
-                    target='_blank'
-                    onClick={() => setisNavOpen(false)}
-                    className='nav-hover duration-300'
-                  >
-                    .resume()
-                  </a>
-                </div>
-              </motion.button>
+              {HEADER.map((elem: NavItem, index: number) => {
+                return (
+                  <motion.button key={index}>
+                    <ScrollLink
+                      to={elem.navigateTo}
+                      spy={true}
+                      onClick={() => setisNavOpen(false)}
+                      activeClass='active'
+                      smooth={true}
+                      duration={500}
+                    >
+                      <div className='px-[40px] py-3  sm:py-[20px] xl:px-0 xl:py-0'>
+                        <div className='nav-hover font-semibold duration-300'>
+                          {elem.navName}
+                        </div>
+                      </div>
+                    </ScrollLink>
+                  </motion.button>
+                );
+              })}
             </motion.div>
           </div>
         </motion.nav>
