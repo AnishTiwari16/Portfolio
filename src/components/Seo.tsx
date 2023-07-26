@@ -4,8 +4,9 @@ import { useRouter } from 'next/router';
 // !STARTERCONF Change these default meta
 const defaultMeta = {
   title: 'Anish Portfolio',
-  siteName: 'Anish Portfolio',
-  description: 'Anish Portfolio Description',
+  siteName: 'Portfolio',
+  description:
+    'Portfolio website for software developer Anish Tiwari, Explore my impressive portfolio :)',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
   url: 'https://tsnext-tw.thcl.dev',
   type: 'website',
