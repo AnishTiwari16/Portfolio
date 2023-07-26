@@ -15,9 +15,26 @@ import Mail from '../../../public/images/mail.svg';
 import Star from '../../../public/images/star.svg';
 import Twitter from '../../../public/images/twitter.svg';
 const LetsTalk = () => {
+  const [windowWidth, setWindowWidth] = React.useState(0);
+  React.useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    // Set initial width on component mount
+    handleResize();
+
+    // Attach the event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const leftHandVariant = {
     offscreen: {
-      x: -120,
+      x: windowWidth <= 640 ? -20 : -120,
       opacity: 0,
     },
     onscreen: {
@@ -31,7 +48,7 @@ const LetsTalk = () => {
   };
   const rightHandVariant = {
     offscreen: {
-      x: 120,
+      x: windowWidth <= 640 ? 20 : 120,
       opacity: 0,
     },
     onscreen: {
