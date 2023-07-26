@@ -1,4 +1,5 @@
 import { motion, SVGMotionProps } from 'framer-motion';
+import Link from 'next/link';
 import React, { useRef, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -134,6 +135,16 @@ const HeaderSection = () => {
                   </motion.button>
                 );
               })}
+              <div className='nav-hover font-semibold duration-300'>
+                <Link
+                  legacyBehavior
+                  href='https://drive.google.com/file/d/1b8ExNxZ2FKJmhkVdbbiCId5SIfzehdEo/view?usp=sharing'
+                >
+                  <a target='_blank' rel='noopener noreferrer'>
+                    .resume()
+                  </a>
+                </Link>
+              </div>
             </motion.div>
           </div>
         </motion.nav>

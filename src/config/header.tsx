@@ -4,8 +4,8 @@ export const HEADER = [
     navigateTo: 'about',
   },
   {
-    navName: '.work()',
-    navigateTo: 'work',
+    navName: '.experience()',
+    navigateTo: 'experience',
   },
   {
     navName: '.skills()',
@@ -14,9 +14,5 @@ export const HEADER = [
   {
     navName: '.contact()',
     navigateTo: 'contact',
-  },
-  {
-    navName: '.resume()',
-    navigateTo: 'resume',
   },
 ];
