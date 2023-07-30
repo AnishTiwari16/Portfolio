@@ -35,10 +35,10 @@ const SkillsSection = () => {
               <p className='mb-1 text-xs md:text-xl'>
                 An individual eager to learn and explore new fields of life and
                 technology, with good problem solving skills and fast learning
-                abilities. Particulary Interested in the field of web
-                development and technologies like NextJS, NodeJS and MongoDB and
-                not shy to learn new things such as Machine Learning and
-                Blockchain development.
+                abilities. Particulary Interested in the field of web & mobile
+                development and technologies like ReactJS, NextJS, React Native,
+                NodeJS and MongoDB and not shy to learn new things such as
+                Machine Learning and Blockchain development.
               </p>
             </div>
 
