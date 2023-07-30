@@ -56,11 +56,11 @@ const SkillsSection = () => {
                 } 75.89%)`,
               }}
             >
-              <div className='mt-10 grid grid-cols-4 gap-x-8 rounded-xl bg-[#ffffff1a] p-4 md:mt-0 md:gap-x-16'>
+              <div className='mt-10 grid grid-cols-4 gap-x-8 rounded-xl bg-[#ffffff1a] p-4 lg:mt-0 lg:gap-x-16'>
                 <div
                   className={`${
                     selectTab === 0 && 'tab-color'
-                  } on-tabs text-xs font-bold md:text-lg`}
+                  } text-xs font-bold hover:cursor-pointer md:text-lg`}
                   onClick={() => handleTabs('Languages')}
                 >
                   Languages
@@ -68,7 +68,7 @@ const SkillsSection = () => {
                 <div
                   className={`${
                     selectTab === 1 && 'tab-color'
-                  } on-tabs text-xs font-bold md:text-lg`}
+                  } text-xs font-bold hover:cursor-pointer md:text-lg`}
                   onClick={() => handleTabs('Framework')}
                 >
                   Framework
@@ -76,7 +76,7 @@ const SkillsSection = () => {
                 <div
                   className={`${
                     selectTab === 2 && 'tab-color'
-                  } on-tabs text-xs font-bold md:text-lg`}
+                  } text-xs font-bold hover:cursor-pointer md:text-lg`}
                   onClick={() => handleTabs('Database')}
                 >
                   Database
@@ -84,7 +84,7 @@ const SkillsSection = () => {
                 <div
                   className={`${
                     selectTab === 3 && 'tab-color'
-                  } on-tabs text-xs font-bold md:text-lg`}
+                  } text-xs font-bold hover:cursor-pointer md:text-lg`}
                   onClick={() => handleTabs('Others')}
                 >
                   Others

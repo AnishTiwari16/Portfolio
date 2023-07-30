@@ -58,7 +58,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className='about-image-container relative mt-8 flex h-[260px] w-auto before:h-[142px] before:w-[142px] sm:h-[396px] sm:w-[396px] sm:before:h-[258px] sm:before:w-[258px] md:mt-0'>
+          <div className='about-image-container relative mt-8 flex h-[260px] w-auto before:h-[142px] before:w-[142px] sm:h-[396px] sm:before:h-[258px] sm:before:w-[258px] lg:mt-0 lg:w-[396px]'>
             <div className='absolute inset-0  z-[1] m-auto h-[152px] w-[152px] rounded-full border-[3px] border-[rgba(255,255,255,0.15)] sm:h-[274px] sm:w-[274px]'></div>
             <div className='absolute inset-0  z-[1] m-auto h-[190px] w-[190px] rounded-full border-[1px] border-[rgba(255,255,255,0.15)] sm:h-[345px] sm:w-[345px]'></div>
             <div className='animate-rot-js-xs sm:animate-rot-js bg-about-logo-gradient absolute left-[44%] top-[8%] z-[2] m-auto flex h-[26px] w-[26px] items-center justify-center rounded-full border-[0.44px] border-[rgba(255,255,255,0.25)] backdrop-blur-lg sm:h-[46px] sm:w-[46px] md:top-[0%]'>
