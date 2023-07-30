@@ -31,6 +31,12 @@ export default function HomePage() {
       <main>
         <HeaderSection />
 
+        <div
+          id='bg'
+          className=' absolute inset-0 z-[-10] h-screen w-[100%] bg-cover bg-center bg-no-repeat'
+        >
+          <div className='h-[250%] backdrop-blur-[100px]'></div>
+        </div>
         <section className='container mx-auto px-10 md:px-20'>
           <HeroSection />
           <AboutSection />

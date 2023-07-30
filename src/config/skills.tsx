@@ -22,7 +22,7 @@ export const SKILLS = [
   {
     id: 2,
     name: 'Database',
-    db: ['MongoDB', 'Firebase'],
+    db: ['MongoDB', 'Firebase', 'Firestore'],
     db_images: [
       'https://i.imgur.com/jGRZClv.png',
       'https://i.imgur.com/SjhDmw0.png',

@@ -9,7 +9,7 @@ const ExperienceSection = () => {
   return (
     <ScrollAnimation>
       <motion.div variants={bounceVariant}>
-        <div className='py-16 md:py-52' id='experience'>
+        <div className='py-16 md:py-44 lg:py-52' id='experience'>
           <h3 className='custom-shadow flex items-center justify-center text-5xl'>
             Experience
           </h3>
@@ -22,7 +22,7 @@ const ExperienceSection = () => {
             <div className='w-full md:w-[424px]'>
               <h3>Unibase Research</h3>
               <div className='flex'>
-                <p className='mr-4'>Full-Stack Developer</p>
+                <p className='mr-4'>Front-end Developer</p>
                 <p className='text-sm text-[#636262]'>{`// ${'Aug 2023 - Present'}`}</p>
               </div>
               <ul className='list-disc pl-4 pt-3'>
