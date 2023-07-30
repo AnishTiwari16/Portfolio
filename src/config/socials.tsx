@@ -1,7 +1,7 @@
 export const SOCIAL_DATA = [
   {
     name: 'linkedin',
-    link: 'https://www.linkedin.com/in/sarthak-ahuja07/',
+    link: 'https://www.linkedin.com/in/anish-tiwari-a5923b207/',
   },
   {
     name: 'github',
