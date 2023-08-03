@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import { useWindowSize } from 'react-use';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 import ScrollAnimation from '@/components/ScrollAnimations';
 
@@ -16,34 +20,23 @@ import Mail from '../../../public/images/mail.svg';
 import Star from '../../../public/images/star.svg';
 import Twitter from '../../../public/images/twitter.svg';
 const LetsTalk = () => {
-  const [copySuccess, SetCopySuccess] = React.useState(false);
-  const [windowWidth, setWindowWidth] = React.useState(0);
   const handleCopyText = (email: string) => {
     copy(email);
-    SetCopySuccess(true);
-    setTimeout(() => {
-      SetCopySuccess(false);
-    }, 3000);
+    toast.info('Email copied to clipboard!', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
   };
-  React.useEffect(() => {
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }
-
-    // Set initial width on component mount
-    handleResize();
-
-    // Attach the event listener for window resize
-    window.addEventListener('resize', handleResize);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const { width } = useWindowSize();
   const leftHandVariant = {
     offscreen: {
-      x: windowWidth <= 640 ? -20 : -120,
+      x: width <= 640 ? -20 : -120,
       opacity: 0,
     },
     onscreen: {
@@ -57,7 +50,7 @@ const LetsTalk = () => {
   };
   const rightHandVariant = {
     offscreen: {
-      x: windowWidth <= 640 ? 20 : 120,
+      x: width <= 640 ? 20 : 120,
       opacity: 0,
     },
     onscreen: {
@@ -89,11 +82,24 @@ const LetsTalk = () => {
       },
     },
   };
+
   return (
     <div
       className='relative pb-10 pt-44 text-center md:pb-20 md:pt-60'
       id='contact'
     >
+      <ToastContainer
+        position='bottom-right'
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme='light'
+      />
       <ScrollAnimation>
         <motion.div
           variants={starAnimationVariant}
@@ -175,15 +181,6 @@ const LetsTalk = () => {
                 );
               })}
             </motion.div>
-            <div className='relative'>
-              {copySuccess && (
-                <motion.div className=' absolute bottom-[calc(100%+4px)] left-0 h-12 w-[100%] duration-500'>
-                  <div className=' bottom-[calc(100%+4px)] left-[calc(50%+4px)] z-[2] mx-auto flex w-fit items-center gap-1 rounded-[6px] bg-[#181a1b] px-[18px] py-2'>
-                    <p className='text-4xsm text-white'>Copied</p>
-                  </div>
-                </motion.div>
-              )}
-            </div>
             <div
               className='mx-auto flex w-9/12 cursor-pointer items-center justify-center rounded border py-2 md:w-6/12 lg:w-3/12'
               onClick={() => handleCopyText('anish.at.tiwari@gmail.com')}

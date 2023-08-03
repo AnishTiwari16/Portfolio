@@ -27,12 +27,12 @@ const SkillsSection = () => {
     <ScrollAnimation>
       <motion.div variants={bounceVariant}>
         <div className='pt-16 md:pt-48' id='skills'>
-          <div className='grid grid-cols-1 gap-x-44 md:grid-cols-2'>
+          <div className='grid grid-cols-1 gap-x-44 lg:grid-cols-2'>
             <div>
               <div className='custom-shadow text-5xl font-bold leading-snug md:text-8xl md:leading-normal'>
                 Skills
               </div>
-              <p className='mb-1 text-xs md:text-xl'>
+              <p className='mb-1 text-xs md:text-base lg:text-xl'>
                 An individual eager to learn and explore new fields of life and
                 technology, with good problem solving skills and fast learning
                 abilities. Particulary Interested in the field of web & mobile
@@ -43,7 +43,7 @@ const SkillsSection = () => {
             </div>
 
             <div
-              className='h-[400px] rounded-[20px]'
+              className='h-full rounded-[20px]'
               style={{
                 background: `linear-gradient(155.73deg, #000000 25.54%,${
                   selectTab === 0
