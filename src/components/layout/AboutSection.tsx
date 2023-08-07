@@ -23,7 +23,7 @@ const AboutSection = () => {
     <ScrollAnimation>
       <motion.div variants={bounceVariant}>
         <div
-          className='grid grid-cols-1 gap-x-44 pt-16 md:pt-52 lg:grid-cols-2'
+          className='grid grid-cols-1 gap-x-44 pt-6 md:pt-48 lg:grid-cols-2'
           id='about'
         >
           <div>
@@ -31,9 +31,10 @@ const AboutSection = () => {
               About
             </div>
             <p className=''>
-              I am a Senior at maharaja agrasen institute of technology pursuing
-              B.Tech in Electronics and Communication. Focused, quick-learner
-              and Passionate about coding and trying out new things.
+              I’m self-directed and motivated developer. A keen learner having
+              the passion to do work with good communication skills. Focused,
+              quick-learner and Passionate about coding and trying out new
+              things.
             </p>
             <div className='flex'>
               {SOCIAL_DATA.map((elem, index) => {

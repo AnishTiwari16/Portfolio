@@ -50,7 +50,7 @@ const HeroSection = () => {
             <div className=' absolute left-5 top-[12px] h-2 w-2 rounded-full bg-[#E35353] sm:left-6 sm:top-6 sm:h-2.5 sm:w-2.5  '></div>
             <div className=' absolute left-[36px] top-[12px] h-2  w-2 rounded-full bg-[#53E37C] sm:left-10 sm:top-6 sm:h-2.5 sm:w-2.5 xl:left-[46px]'></div>
             <div className=' absolute left-[52px] top-[12px] h-2  w-2 rounded-full bg-[#F8D41C] sm:left-[56px] sm:top-6 sm:h-2.5 sm:w-2.5 xl:left-[68px]'></div>
-            <div className='h-[180px] bg-[#000000] px-2 pt-4 sm:px-4 lg:h-full'>
+            <div className='h-[300px] rounded-[20px] rounded-t-[0px] bg-[#000000] px-2 pt-4 sm:px-4 lg:h-full'>
               <div className='text-sm'>
                 <Typewriter
                   options={{

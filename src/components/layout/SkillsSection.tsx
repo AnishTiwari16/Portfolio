@@ -56,7 +56,7 @@ const SkillsSection = () => {
                 } 75.89%)`,
               }}
             >
-              <div className='mt-10 grid grid-cols-4 gap-x-8 rounded-xl bg-[#ffffff1a] p-4 lg:mt-0 lg:gap-x-16'>
+              <div className='mx-1 mt-10 grid grid-cols-4 gap-x-8 rounded-xl bg-[#ffffff1a] p-4 lg:mt-0 lg:gap-x-16'>
                 <div
                   className={`${
                     selectTab === 0 && 'tab-color'
