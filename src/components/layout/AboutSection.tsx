@@ -23,7 +23,7 @@ const AboutSection = () => {
     <ScrollAnimation>
       <motion.div variants={bounceVariant}>
         <div
-          className='grid grid-cols-1 gap-x-44 pt-16 md:pt-52 lg:grid-cols-2'
+          className='grid grid-cols-1 gap-x-44 pt-6 md:pt-48 lg:grid-cols-2'
           id='about'
         >
           <div>
