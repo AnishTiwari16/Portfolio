@@ -33,7 +33,7 @@ const ExperienceSection = () => {
                   with excellent quality in a very short time.
                 </li>
                 <li className='pt-2'>
-                  Worked as a full stack developer with a focus on front end
+                  Working as a full stack developer with a focus on front end
                   technologies (React + TypeScript) and blockchain (Defi,
                   Polygon).
                 </li>
@@ -42,7 +42,7 @@ const ExperienceSection = () => {
             <div className='w-full md:w-[424px]'>
               <h3>Unibase Research</h3>
               <div className='flex'>
-                <p className='mr-4'>Full-Stack Developer Intern</p>
+                <p className='mr-4'>Front-end Developer Intern</p>
                 <p className='text-sm text-[#636262]'>{`// ${'Aug 2022 - Aug 2023'}`}</p>
               </div>
               <ul className='list-disc pl-4 pt-3'>
