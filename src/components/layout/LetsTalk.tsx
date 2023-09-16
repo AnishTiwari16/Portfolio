@@ -25,7 +25,7 @@ const LetsTalk = () => {
       color: '#fff',
     },
     iconTheme: {
-      primary: '#7C40E4',
+      primary: '#09f755',
       secondary: '#FFFAEE',
     },
     duration: 5000,
