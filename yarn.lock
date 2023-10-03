@@ -6679,7 +6679,7 @@
     "potpack" "^1.0.1"
     "zstddec" "^0.0.2"
 
-"three@>= 0.151.0", "three@>=0.125.0", "three@>=0.126", "three@>=0.126.1", "three@>=0.128.0", "three@>=0.133", "three@>=0.137", "three@>=0.144.0":
+"three@^0.157.0", "three@>= 0.151.0", "three@>=0.125.0", "three@>=0.126", "three@>=0.126.1", "three@>=0.128.0", "three@>=0.133", "three@>=0.137", "three@>=0.144.0":
   "integrity" "sha512-CeAwQrf4x3z0/e+MC4F+nXLW5t0gh3pw+L6CCBqpHvOq3bGYIgRYub7Pv0j/9wR+d++OiEglyZzWyuSYbwWGOA=="
   "resolved" "https://registry.npmjs.org/three/-/three-0.157.0.tgz"
   "version" "0.157.0"
