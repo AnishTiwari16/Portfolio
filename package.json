@@ -18,8 +18,11 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@react-three/drei": "^9.86.3",
+    "@react-three/fiber": "^8.14.4",
     "clsx": "^1.2.1",
     "framer-motion": "^10.12.20",
+    "maath": "^0.10.4",
     "next": "^13.4.4",
     "popmotion": "^11.0.5",
     "react": "^18.2.0",
