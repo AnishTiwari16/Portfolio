@@ -40,10 +40,6 @@ export default function Seo(props: SeoProps) {
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
       <meta name='image' property='og:image' content={meta.image} />
-      <meta
-        name='google-site-verification'
-        content='IFDPx4usFi0Hhe8z1Yej5WFVR6ScV2SzQ0d4LXai5M4'
-      />
       {/* Twitter */}
       <meta name='twitter:card' content='summary_large_image' />
       {/* // !STARTERCONF Remove or change to your handle */}
