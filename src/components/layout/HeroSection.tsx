@@ -94,11 +94,11 @@ const HeroSection = () => {
                           cursor: '',
                           deleteSpeed: 20,
                           strings: [
-                            '<span class="text-codeComment"> Front-end Developer </span>',
+                            '<span class="text-codeComment"> Developer </span>',
                             '<span class="text-codeComment"> Qualified advanced javascript certification </span>',
                             '<span class="text-codeComment"> 500+ problems on LC and GFG </span>',
                             '<span class="text-codeComment"> Ranked 3rd rank in BPIT Coding Competition </span>',
-                            '<span class="text-codeComment"> Qualified for SnackDown </span>',
+                            '<span class="text-codeComment"> Contributed to open source projects through Hacktober fest </span>',
                           ],
                           autoStart: true,
                           loop: true,
