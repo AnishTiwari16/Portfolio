@@ -138,7 +138,7 @@ const HeaderSection = () => {
               <div className='nav-hover font-semibold duration-300'>
                 <Link
                   legacyBehavior
-                  href='https://drive.google.com/file/d/1b8ExNxZ2FKJmhkVdbbiCId5SIfzehdEo/view?usp=sharing'
+                  href='https://drive.google.com/file/d/1z2iStKFDcHLJb_0a7arxvVi6XV4sXydy/view'
                 >
                   <a target='_blank' rel='noopener noreferrer'>
                     .resume()
