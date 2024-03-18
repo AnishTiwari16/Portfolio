@@ -38,7 +38,7 @@ const HeroSection = () => {
                 </span>
                 <br />
                 <div className='py-2 text-xs md:text-xl'>
-                  I am a front-end developer based out of New Delhi, India.
+                  I am a software developer based out of New Delhi, India.
                 </div>
               </div>
               <div>

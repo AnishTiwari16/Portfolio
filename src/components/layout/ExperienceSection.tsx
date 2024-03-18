@@ -24,8 +24,8 @@ const ExperienceSection = () => {
               <h6 className='py-1 text-[#636262]'>(Remote)</h6>
               <div className='flex'>
                 <p className='mr-4'>
-                  <span className='text-lg font-semibold'>Turf</span> -
-                  Front-end Developer
+                  <span className='text-lg font-semibold'>Turf</span> - Software
+                  Developer
                 </p>
                 <p className='flex items-center text-sm text-[#636262]'>{`// ${'Aug 2023 - Present'}`}</p>
               </div>
@@ -72,7 +72,7 @@ const ExperienceSection = () => {
               <div className='flex'>
                 <p className='mr-4'>
                   <span className='text-lg font-semibold'>Instaraise</span> -
-                  Front-end Developer
+                  Front-end Intern
                 </p>
                 <p className='flex items-center text-sm text-[#636262]'>{`// ${'Aug 2022 - Aug 2023'}`}</p>
               </div>
